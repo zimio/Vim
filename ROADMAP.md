@@ -149,10 +149,10 @@ Now follows an exhaustive list of every known Vim command that we could find.
 | :white_check_mark: | `. | go to the position of the last change in this file     |
 | :white_check_mark: | '.                                                          | go to the position of the last change in this file     |
 | :arrow_down:       | '{a-zA-Z0-9[]'"<>.}                                         | same as `, but on the first non-blank in the line      |
-| :arrow_down:       | :marks                                                      | print the active marks                                 |
+| :white_check_mark:       | :marks                                                      | print the active marks                                 |
 | :white_check_mark: | :1234: CTRL-O                                               | go to Nth older position in jump list                  |
 | :white_check_mark: | :1234: CTRL-I                                               | go to Nth newer position in jump list                  |
-| :arrow_down:       | :ju[mps]                                                    | print the jump list                                    |
+| :white_check_mark:       | :ju[mps]                                                    | print the jump list                                    |
 
 ## Various motions
 
@@ -381,7 +381,7 @@ moving around:
 | :white_check_mark:                  | {visual}=                                      | filter the highlighted lines through 'equalprg'                                                                                       |
 | :white_check_mark: :star: :warning: | :[range]s[ubstitute]/{pattern}/{string}/[g][c] | substitute {pattern} by {string} in [range] lines; with [g], replace all occurrences of {pattern}; with [c], confirm each replacement | Currently we only support JavaScript Regex and only options `gi` are implemented |
 | :arrow_down:                        | :[range]s[ubstitute][g][c]                     | repeat previous ":s" with new range and options                                                                                       |
-| :arrow_down:                        | &                                              | Repeat previous ":s" on current line without options                                                                                  |
+| :white_check_mark:                        | &                                              | Repeat previous ":s" on current line without options                                                                                  |
 | :arrow_down:                        | :[range]ret[ab][!] [tabstop]                   | set 'tabstop' to new value and adjust white space accordingly                                                                         |
 
 ## Visual mode
@@ -429,12 +429,12 @@ moving around:
 | ------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | :white_check_mark: :star: | :1234: .                          | repeat last change (with count replaced with N)                                                    | Content changes that don't happen under cursor can not be repeated. |
 | :white_check_mark:        | q{a-z}                            | record typed characters into register {a-z}                                                        |
-| :arrow_down:              | q{A-Z}                            | record typed characters, appended to register {a-z}                                                |
+| :white_check_mark:              | q{A-Z}                            | record typed characters, appended to register {a-z}                                                |
 | :white_check_mark:        | q                                 | stop recording                                                                                     |
 | :white_check_mark:        | :1234: @{a-z}                     | execute the contents of register {a-z} (N times)                                                   |
 | :white_check_mark:        | :1234: @@                         | repeat previous @{a-z} (N times)                                                                   |
 | :arrow_down:              | :@{a-z}                           | execute the contents of register {a-z} as an Ex command                                            |
-| :arrow_down:              | :@@                               | repeat previous :@{a-z}                                                                            |
+| :white_check_mark:              | :@@                               | repeat previous :@{a-z}                                                                            |
 | :arrow_down:              | :[range]g[lobal]/{pattern}/[cmd]  | execute Ex command [cmd](default: ':p') on the lines within [range] where {pattern} matches        |
 | :arrow_down:              | :[range]g[lobal]!/{pattern}/[cmd] | execute Ex command [cmd](default: ':p') on the lines within [range] where {pattern} does NOT match |
 | :arrow_down:              | :so[urce] {file}                  | read Ex commands from {file}                                                                       |
