@@ -381,7 +381,7 @@ moving around:
 | :white_check_mark:                  | {visual}=                                      | filter the highlighted lines through 'equalprg'                                                                                       |
 | :white_check_mark: :star: :warning: | :[range]s[ubstitute]/{pattern}/{string}/[g][c] | substitute {pattern} by {string} in [range] lines; with [g], replace all occurrences of {pattern}; with [c], confirm each replacement | Currently we only support JavaScript Regex and only options `gi` are implemented |
 | :arrow_down:                        | :[range]s[ubstitute][g][c]                     | repeat previous ":s" with new range and options                                                                                       |
-| :arrow_down:                        | &                                              | Repeat previous ":s" on current line without options                                                                                  |
+| :white_check_mark:                        | &                                              | Repeat previous ":s" on current line without options                                                                                  |
 | :arrow_down:                        | :[range]ret[ab][!] [tabstop]                   | set 'tabstop' to new value and adjust white space accordingly                                                                         |
 
 ## Visual mode
